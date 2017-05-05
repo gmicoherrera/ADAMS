@@ -1,0 +1,15 @@
+var i, x = "";
+var example = {
+    "object": [
+				{"id":61,"module":"pullout_request","text":"Excess"},
+				{"id":62,"module":"pullout_request","text":"Not Selling"},
+				{"id":65,"module":"pullout_request","text":"Sample Reason 1"},
+				{"id":1,"module":"inventory_wastage","text":"Excess"},
+				{"id":2,"module":"inventory_wastage","text":"Spiled"}
+			]
+}		
+
+for (i in example.object) {
+    x += "<br>" + example.object[i].id + " : " +  example.object[i].module + " : " + example.object[i].text +"</br>";
+}
+document.getElementById("demo").innerHTML = x;
