@@ -1,0 +1,13 @@
+steps in pushing a file in gitHub
+
+git init
+git remote add "Name" "Ssh-link"
+git add .
+git commit -m "Text"
+git push -u "Name" master
+
+
+deleting
+
+git remote rm "destination"
+git remove -v (to check)
