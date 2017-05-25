@@ -17,7 +17,7 @@
 		return words[index];
 
 	}
-
+ 
 	var newGame = function(){
 
 		$scope.incorrectLettersChosen=[];
@@ -68,7 +68,7 @@ if($scope.guesses==0){
 	alert("You Lost ohhhhh!");
 	$timeout(function(){
 		newGame();
-	},500);
+	},500);			
 }
 if($scope.displayWord.indexOf("*")==-1){
 	alert("You Won!");	

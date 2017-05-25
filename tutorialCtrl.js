@@ -1,0 +1,1 @@
+var tutCtrl = angular.module("tutorialCtrl",[]);

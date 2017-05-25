@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="test">
+
+<chael-gutierrez></chael-gutierrez>
+<mico-herrera></mico-herrera>
+<mico></mico>
+<mico1></mico>
+
+
+<script>
+var test = angular.module("test", []);
+test.directive("chaelGutierrez", function() {
+    return {
+        template : "<h1>Hello World!</h1>"
+    };
+});
+
+test.directive("micoHerrera", function() {
+    return {
+        template : "<h2>Hello World!</h2>"
+    };
+});
+
+test.directive("mico", function() {
+    return {
+        template : "<h3>Hello World!</h3>"
+    };
+});
+test.directive("mico1", function() {
+    return {
+        template : "<h4>Hello World!</h4>"
+    };
+});
+
+
+</script>
+</body>
+</html>

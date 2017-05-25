@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingCart">>
+
+<head>
+
+    <title>Online Restaurant Cart</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+    body {
+        background-image: url("https://4.bp.blogspot.com/-I6vbd-7XZu4/U2fSx6oydUI/AAAAAAAA2uA/EIHaPCiIGuQ/s0/Tasty+breakfast_Ultra+HD.jpg");
+        background-size: 2500px 1024px;
+        background-color: #cccccc;
+        padding-top: 50px
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: verdana;
+        font-style: oblique;
+        font-size: 70px;
+    }
+    h3 {
+        color: white;
+        text-align: center;
+        font-style: oblique;
+        font-size: 20px;
+    }
+    #divTotal{
+        background-color: green;
+        font-style: oblique;
+        data-spy    
+    }
+    .affix{
+        right: 0px;
+    }
+    .affix-top{
+        right: 0px;
+        position: fixed;
+    }
+
+    </style>
+</head>
+
+<body>  
+
+    <h1>My Own Food Cart</h1>
+    <h3>Buy your foods here!</h3>
+    <h3>Please make your selections from the following choices:</h3>
+    <p>&nbsp;</p>
+
+
+
+    <div class="container">
+       <div class="row">
+
+       </div>
+       <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Coffee</h3>
+            </div>
+            <div class="panel-body">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optradio">Espresso</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optradio">Café Latté</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio">Cappuccino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Breakfast Meal</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optradio">TapSiLog</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optradio">HotSiLog</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optradio">PorkSiLog</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Dessert</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optradio">Halo-Halo</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optradio">Cake</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio">Leche Flan</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
+                                            <div class="panel panel-primary">
+                                                <div id="divTotal" class="panel-heading">
+                                                    <h3 class="panel-title">Total</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <h2>Rs. 100</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <a href="#/checkout" class="btn btn-danger">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-view></div>
+                                    <script type="text/javascript" src="public/script/angular.min.js"></script>
+                                    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+                                    <script src="public/cart/cart.js"></script>
+                                    <script src="public/app.js"></script>
+                                    <script src="public/checkout/checkout.js"></script>
+
+                                </body>
+
+                                </html>
